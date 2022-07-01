@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bank Data</title>
+    <link rel="stylesheet" href="banking.css">
+
+    <!-- tailwin link  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="w-3/4 mx-auto">
+        <p class="text-3xl my-8 text-center">
+            Your Bank Data
+        </p>
+        <div class="responsive-section">
+
+            <div class="bg-green-400 text-center py-8 responsive">
+                <p class="text-3xl">Diposit</p>
+                <p class="text-5xl">$<span id="diposit">00</span> </p>
+            </div>
+            <div class="bg-yellow-400 text-center py-8 responsive">
+                <p class="text-3xl">Withdraw</p>
+                <p class="text-5xl">$<span id="withdraw">00</span> </p>
+            </div>
+            <div class="bg-pink-400 text-center py-8 responsive">
+                <p class="text-3xl">Balance</p>
+                <p class="text-5xl">$ <span id="balance">2700</span> </p>
+            </div>
+
+        </div>
+        <section class="grid grid-cols-2  mt-8">
+            <div class="bg-purple-400 text-center py-4">
+                <input id="diposit-input" class="w-1/2 text-center border-2 border-blue-400 " type="text" placeholder="Diposit please!!!"><br>
+                <button id="diposit-button" class="border-2 my-2 px-5 bg-green-500"> Diposit</button>
+            </div>
+            <div class="bg-red-400 text-center py-4">
+                <input id="withdraw-input" class="w-1/2 text-center border-2 border-blue-400 " type="text" placeholder="Withdraw please!!!"><br>
+                <button id="withdaw-button" class="border-2 my-2 px-5 bg-blue-500"> Withdraw</button>
+            </div>
+        </section>
+        <div class="text-white text-center bg-black font-semibold">
+            <p id="error"></p>
+        </div>
+    </main>
+
+    <!-- js link  -->
+    <script src="java-script/banking.js"></script>
+</body>
+
+</html>

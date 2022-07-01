@@ -1,0 +1,17 @@
+.test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+.text-sty {
+    font-size: 1em;
+    color: tomato;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-weight {
+        width: 100%;
+    }
+}
